@@ -48,7 +48,7 @@ if __name__ == '__main__':
     #Create your car
     car = dk.vehicles.BaseVehicle(drive_loop_delay=cfg['vehicle_loop_delay'],
                                   camera=mycamera,
-                                  actuator_mixer=dd,
+                                  actuator_mixer=mymixer,
                                   remote=myremote,
                                   pilot=mypilot)
     
