@@ -35,7 +35,7 @@ if __name__ == '__main__':
     mycamera = dk.sensors.PiVideoStream()
 
     #Get all autopilot signals from remote host
-    mypilot = dk.remotes.RemoteClient(remote_url, vehicle_id=vehicle_id=cfg['vehicle_id'])
+    mypilot = dk.remotes.RemoteClient(remote_url, vehicle_id=cfg['vehicle_id'])
 
     #Create your car
     car = dk.vehicles.BaseVehicle(drive_loop_delay=cfg['vehicle_loop_delay'],
