@@ -52,6 +52,12 @@ def parse_config(config_path):
     cfg['steering_actuator_min_pulse'] = s_act.getint('left_pulse')
     cfg['steering_actuator_max_pulse'] = s_act.getint('right_pulse')
 
+    l_act = config['left_actuator']
+    cfg['left_actuator_channel'] = l_act.getint('channel')
+    
+    r_act = config['right_actuator']
+    cfg['right_actuator_channel'] = r_act.getint('channel')
+    
     pilot = config['pilot']
     cfg['pilot_model_path'] = os.path.expanduser(pilot.get('model_path'))
 
